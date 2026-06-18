@@ -1,0 +1,438 @@
+Year,Branch,Student_Name,CGPA,Company,Role,Package_LPA,Placement_Type,City
+2022,CSE,Meera Nair,6.87,Capgemini,DevOps Engineer,3.79,Off-Campus,Mumbai
+2022,CSE,Anjali Malhotra,7.65,TCS,DevOps Engineer,4.15,Campus,Mumbai
+2022,CSE,Aditya Chopra,6.78,Capgemini,ML Engineer,4.56,Campus,Mumbai
+2022,CSE,Varun Iyer,9.16,Google,ML Engineer,45.91,Campus,Bangalore
+2022,CSE,Nisha Iyer,6.61,Tech Mahindra,Software Engineer,3.8,Campus,Pune
+2022,CSE,Pooja Agarwal,8.35,TCS,ML Engineer,5.22,Campus,Mumbai
+2022,CSE,Anjali Chopra,7.14,Capgemini,DevOps Engineer,4.49,Off-Campus,Mumbai
+2022,CSE,Karan Patel,6.18,Infosys,Data Analyst,4.54,PPO,Bangalore
+2022,CSE,Arjun Mishra,7.08,Capgemini,Full Stack Developer,4.76,Campus,Mumbai
+2022,CSE,Kavya Iyer,8.74,Qualcomm,Data Analyst,23.5,Campus,Hyderabad
+2022,CSE,Suresh Nair,6.64,HCL,Cloud Engineer,3.63,PPO,Noida
+2022,CSE,Tanvi Nair,8.67,Google,Full Stack Developer,39.09,Campus,Bangalore
+2022,CSE,Raj Iyer,6.26,Cognizant,Cloud Engineer,4.56,Campus,Chennai
+2022,CSE,Shreya Mishra,9.45,Qualcomm,Data Analyst,22.46,Campus,Hyderabad
+2022,CSE,Tanvi Chopra,7.02,Cognizant,Full Stack Developer,4.02,Campus,Chennai
+2022,CSE,Krishnan Singh,7.99,Infosys,Data Analyst,4.82,Off-Campus,Bangalore
+2022,CSE,Gaurav Pandey,8.33,Capgemini,DevOps Engineer,4.55,PPO,Mumbai
+2022,CSE,Manish Chopra,9.36,Google,DevOps Engineer,44.98,Campus,Bangalore
+2022,CSE,Meera Mehta,6.44,HCL,Cloud Engineer,3.5,Campus,Noida
+2022,CSE,Manish Trivedi,8.97,Samsung,Full Stack Developer,11.27,Off-Campus,Noida
+2022,CSE,Sneha Kapoor,6.78,Wipro,DevOps Engineer,4.1,Campus,Bangalore
+2022,CSE,Aarav Kapoor,7.26,TCS,Full Stack Developer,4.05,Campus,Mumbai
+2022,CSE,Lakshmi Verma,6.94,Cognizant,ML Engineer,4.65,Campus,Chennai
+2022,ECE,Suresh Singh,6.5,HCL,IoT Developer,4.42,Campus,Noida
+2022,ECE,Vidya Pandey,9.76,Razorpay,Hardware Engineer,27.43,Campus,Bangalore
+2022,ECE,Priya Rao,9.51,Qualcomm,RF Engineer,20.25,Campus,Hyderabad
+2022,ECE,Aditya Malhotra,8.16,PhonePe,Embedded Engineer,17.39,Off-Campus,Bangalore
+2022,ECE,Krishnan Patel,9.53,Qualcomm,Hardware Engineer,19.93,Campus,Hyderabad
+2022,ECE,Shreya Reddy,8.1,Siemens,System Engineer,7.53,Campus,Mumbai
+2022,ECE,Karan Gupta,6.38,HCL,Hardware Engineer,3.73,Campus,Noida
+2022,ECE,Amit Gupta,6.24,Bosch,VLSI Engineer,6.85,Off-Campus,Bangalore
+2022,ECE,Karan Reddy,8.09,Swiggy,VLSI Engineer,21.81,Campus,Bangalore
+2022,ECE,Ananya Rao,9.15,Flipkart,Embedded Engineer,24.87,PPO,Bangalore
+2022,ECE,Anjali Nair,6.65,HCL,Embedded Engineer,3.88,Off-Campus,Noida
+2022,ECE,Gaurav Mishra,6.01,HCL,System Engineer,3.63,Off-Campus,Noida
+2022,ECE,Mohit Pandey,8.72,Siemens,Embedded Engineer,7.51,Campus,Mumbai
+2022,ECE,Varun Chopra,6.24,Wipro,IoT Developer,3.5,Campus,Bangalore
+2022,ECE,Sonal Kumar,6.22,Cognizant,IoT Developer,3.58,Campus,Chennai
+2022,ECE,Ananya Nair,7.57,PhonePe,Embedded Engineer,20.64,Campus,Bangalore
+2022,ECE,Riya Malhotra,8.2,Qualcomm,Hardware Engineer,25.23,Campus,Hyderabad
+2022,ECE,Nikhil Nair,7.04,Infosys,RF Engineer,4.43,Campus,Bangalore
+2022,ECE,Ananya Sharma,7.79,Flipkart,RF Engineer,24.65,Campus,Bangalore
+2022,ECE,Deepak Agarwal,9.44,PhonePe,IoT Developer,19.95,Campus,Bangalore
+2022,ECE,Naina Kapoor,9.84,ABB,RF Engineer,6.82,Off-Campus,Bangalore
+2022,ECE,Arjun Singh,7.03,TCS,RF Engineer,4.84,Campus,Mumbai
+2022,ECE,Vidya Reddy,8.8,Razorpay,IoT Developer,26.95,Off-Campus,Bangalore
+2022,ECE,Shreya Iyer,9.53,Microsoft,RF Engineer,34.11,Campus,Hyderabad
+2022,ECE,Akash Sharma,7.3,Infosys,Hardware Engineer,4.46,Campus,Bangalore
+2022,ECE,Sanjay Chopra,8.75,Google,Hardware Engineer,37.63,PPO,Bangalore
+2022,ECE,Divya Chopra,6.14,Wipro,VLSI Engineer,3.89,Campus,Bangalore
+2022,ECE,Akash Joshi,7.42,Siemens,RF Engineer,9.03,Campus,Mumbai
+2022,ME,Arjun Agarwal,9.04,TCS,Manufacturing Engineer,5.75,Off-Campus,Mumbai
+2022,ME,Gaurav Kumar,9.44,L&T,R&D Engineer,6.61,PPO,Mumbai
+2022,ME,Lakshmi Iyer,6.62,Mahindra,R&D Engineer,5.74,Off-Campus,Mumbai
+2022,ME,Krishnan Reddy,9.18,Bosch,Manufacturing Engineer,7.53,Off-Campus,Bangalore
+2022,ME,Krishnan Sharma,8.57,TCS,Quality Engineer,4.74,Off-Campus,Mumbai
+2022,ME,Pooja Trivedi,7.56,Siemens,Quality Engineer,7.57,Campus,Mumbai
+2022,ME,Ishaan Malhotra,9.75,Tata Motors,Quality Engineer,6.68,Campus,Pune
+2022,ME,Nikhil Pandey,8.36,Siemens,Manufacturing Engineer,7.31,Off-Campus,Mumbai
+2022,ME,Manish Verma,8.76,L&T,Manufacturing Engineer,7.07,Off-Campus,Mumbai
+2022,ME,Priya Pandey,6.27,Tata Motors,Design Engineer,7.66,Campus,Pune
+2022,ME,Naina Trivedi,7.21,TCS,Project Engineer,4.33,Off-Campus,Mumbai
+2022,ME,Deepak Reddy,7.64,TCS,Project Engineer,4.93,PPO,Mumbai
+2022,ME,Uday Joshi,7.58,L&T,Project Engineer,6.29,Campus,Mumbai
+2022,ME,Vidya Mehta,7.81,Bosch,Manufacturing Engineer,7.82,Campus,Bangalore
+2022,ME,Anjali Joshi,8.01,Tata Motors,Manufacturing Engineer,7.35,Campus,Pune
+2022,ME,Naina Nair,9.15,Siemens,R&D Engineer,7.33,Campus,Mumbai
+2022,ME,Vikram Patel,7.78,Tata Motors,R&D Engineer,7.19,Off-Campus,Pune
+2022,ME,Shreya Mishra,6.95,Tata Motors,Design Engineer,7.18,Off-Campus,Pune
+2022,ME,Rohit Nair,6.69,Mahindra,Manufacturing Engineer,6.54,Campus,Mumbai
+2022,ME,Aryan Rao,6.52,Bosch,Project Engineer,7.56,PPO,Bangalore
+2022,ME,Nikhil Rao,8.39,Mahindra,Project Engineer,7.68,Campus,Mumbai
+2022,ME,Sanjay Kumar,8.9,Bosch,Quality Engineer,7.66,Off-Campus,Bangalore
+2022,ME,Sonal Shah,8.44,Tata Motors,Manufacturing Engineer,7.11,Off-Campus,Pune
+2022,ME,Meera Mehta,7.25,Siemens,R&D Engineer,6.89,Campus,Mumbai
+2022,ME,Divya Reddy,6.25,TCS,Design Engineer,4.27,Campus,Mumbai
+2022,ME,Kavya Pandey,7.52,L&T,Project Engineer,6.82,Off-Campus,Mumbai
+2022,ME,Rahul Shah,6.02,Mahindra,R&D Engineer,6.11,Campus,Mumbai
+2022,ME,Suresh Chopra,9.12,ABB,R&D Engineer,7.61,Campus,Bangalore
+2022,ME,Aditya Mishra,7.31,Tata Motors,R&D Engineer,7.5,Off-Campus,Pune
+2022,ME,Deepak Kapoor,8.08,TCS,Design Engineer,4.95,Off-Campus,Mumbai
+2022,Civil,Sara Kumar,6.2,Deloitte,Project Manager,8.06,Campus,Mumbai
+2022,Civil,Rahul Iyer,8.93,KPMG,Quantity Surveyor,7.41,Off-Campus,Gurgaon
+2022,Civil,Aditya Chopra,6.2,Mahindra,Site Engineer,5.96,Campus,Mumbai
+2022,Civil,Aditya Nair,6.78,L&T,Quantity Surveyor,6.74,Campus,Mumbai
+2022,Civil,Aryan Malhotra,9.7,Deloitte,Structural Engineer,9.82,Off-Campus,Mumbai
+2022,Civil,Vidya Kapoor,9.76,EY,Project Manager,7.46,Off-Campus,Gurgaon
+2022,Civil,Arjun Malhotra,6.1,Mahindra,Quantity Surveyor,6.65,PPO,Mumbai
+2022,Civil,Raj Reddy,6.3,EY,Project Manager,8.24,Campus,Gurgaon
+2022,Civil,Vidya Gupta,9.11,PwC,Quantity Surveyor,9.31,Campus,Mumbai
+2022,Civil,Priya Patel,7.97,Mahindra,Quantity Surveyor,5.84,Campus,Mumbai
+2022,Civil,Arjun Pandey,9.75,EY,Structural Engineer,9.21,Campus,Gurgaon
+2022,Civil,Rohit Kumar,8.86,EY,Consultant,7.54,Off-Campus,Gurgaon
+2022,Civil,Shivam Rao,7.7,EY,Structural Engineer,7.92,Campus,Gurgaon
+2022,Civil,Anjali Iyer,9.44,Tata Motors,Quantity Surveyor,8.04,Campus,Pune
+2022,Civil,Nisha Sharma,7.93,Mahindra,Project Manager,6.16,Campus,Mumbai
+2022,Civil,Nisha Iyer,9.43,EY,Consultant,9.08,Campus,Gurgaon
+2022,Civil,Karan Patel,6.94,Deloitte,Quantity Surveyor,8.47,Off-Campus,Mumbai
+2022,Civil,Shreya Rao,9.09,L&T,Structural Engineer,6.73,Campus,Mumbai
+2022,Civil,Naina Malhotra,7.44,PwC,Consultant,8.21,Campus,Mumbai
+2022,Civil,Nisha Agarwal,8.74,Mahindra,Structural Engineer,6.64,Campus,Mumbai
+2022,Civil,Nikhil Gupta,8.9,KPMG,Quantity Surveyor,7.97,Campus,Gurgaon
+2022,Civil,Meera Malhotra,9.81,PwC,Structural Engineer,9.08,PPO,Mumbai
+2022,Civil,Mohit Nair,7.41,Mahindra,Project Manager,5.68,Campus,Mumbai
+2022,Civil,Akash Verma,8.16,EY,Quantity Surveyor,8.85,Campus,Gurgaon
+2022,Civil,Arjun Sharma,8.24,Deloitte,Site Engineer,8.82,Campus,Mumbai
+2022,Civil,Manish Shah,6.44,L&T,Site Engineer,6.31,Campus,Mumbai
+2022,Civil,Divya Singh,9.16,Mahindra,Consultant,6.34,Campus,Mumbai
+2022,Civil,Riya Kapoor,8.32,PwC,Quantity Surveyor,7.74,Campus,Mumbai
+2022,Civil,Sanjay Joshi,9.35,Deloitte,Consultant,8.71,Campus,Mumbai
+2022,Civil,Arjun Reddy,8.44,Mahindra,Structural Engineer,7.24,Campus,Mumbai
+2022,Civil,Tanvi Patel,6.61,Deloitte,Project Manager,8.37,Campus,Mumbai
+2022,EEE,Mohit Rao,6.28,ABB,Field Engineer,7.89,Off-Campus,Bangalore
+2022,EEE,Karan Pandey,6.45,ABB,Power Systems Engineer,7.31,PPO,Bangalore
+2022,EEE,Ananya Verma,6.65,Tata Motors,Control Engineer,6.99,Off-Campus,Pune
+2022,EEE,Sanjay Gupta,7.83,Tata Motors,Field Engineer,7.46,PPO,Pune
+2022,EEE,Suresh Shah,7.71,Samsung,Control Engineer,8.4,Campus,Noida
+2022,EEE,Vidya Iyer,6.1,ABB,Field Engineer,7.97,Off-Campus,Bangalore
+2022,EEE,Varun Sharma,9.9,Intel,Power Systems Engineer,20.61,Campus,Bangalore
+2022,EEE,Shivam Trivedi,8.54,Tata Motors,Instrumentation Engineer,6.61,Campus,Pune
+2022,EEE,Anjali Shah,7.36,Mahindra,Power Systems Engineer,6.26,Campus,Mumbai
+2022,EEE,Nisha Pandey,8.71,Tata Motors,Field Engineer,7.64,Campus,Pune
+2022,EEE,Akash Rao,6.34,Tata Motors,Instrumentation Engineer,6.44,PPO,Pune
+2022,EEE,Sneha Sharma,8.56,Bosch,Field Engineer,7.59,Campus,Bangalore
+2022,EEE,Priya Kapoor,8.95,Intel,Control Engineer,18.27,Campus,Bangalore
+2022,EEE,Tanvi Singh,9.62,ABB,Electrical Engineer,8.59,Campus,Bangalore
+2022,EEE,Vidya Nair,8.77,Tata Motors,Electrical Engineer,7.43,Campus,Pune
+2022,EEE,Krishnan Gupta,7.8,Bosch,Control Engineer,7.76,Campus,Bangalore
+2022,EEE,Sneha Iyer,7.62,ABB,Field Engineer,8.19,Campus,Bangalore
+2022,EEE,Divya Mishra,6.74,Samsung,Electrical Engineer,9.52,Off-Campus,Noida
+2022,EEE,Meera Pandey,7.33,Bosch,Control Engineer,6.8,Campus,Bangalore
+2022,EEE,Varun Malhotra,9.9,ABB,Instrumentation Engineer,8.64,Campus,Bangalore
+2022,EEE,Pooja Mehta,8.15,Bosch,Power Systems Engineer,7.28,PPO,Bangalore
+2022,EEE,Lakshmi Malhotra,7.49,Siemens,Instrumentation Engineer,6.88,Off-Campus,Mumbai
+2022,EEE,Rahul Singh,7.93,L&T,Control Engineer,6.05,PPO,Mumbai
+2023,CSE,Sanjay Gupta,8.05,Mphasis,Cloud Engineer,5.02,Campus,Bangalore
+2023,CSE,Divya Patel,7.83,Cognizant,Cloud Engineer,4.15,Off-Campus,Chennai
+2023,CSE,Anjali Mehta,9.32,Samsung,Cloud Engineer,9.85,Campus,Noida
+2023,CSE,Shreya Chopra,6.14,TCS,Full Stack Developer,4.14,Off-Campus,Mumbai
+2023,CSE,Krishnan Patel,7.69,Infosys,Software Engineer,4.74,Off-Campus,Bangalore
+2023,CSE,Sanjay Kumar,8.71,Google,Full Stack Developer,36.79,Off-Campus,Bangalore
+2023,CSE,Pooja Agarwal,7.68,HCL,Data Analyst,4.14,Campus,Noida
+2023,CSE,Gaurav Kumar,6.31,Tech Mahindra,ML Engineer,3.86,Off-Campus,Pune
+2023,CSE,Varun Singh,6.91,Capgemini,Software Engineer,3.98,Campus,Mumbai
+2023,CSE,Sara Joshi,8.64,Amazon,DevOps Engineer,28.4,PPO,Hyderabad
+2023,CSE,Naina Pandey,8.69,PhonePe,ML Engineer,22.58,Campus,Bangalore
+2023,CSE,Shivam Gupta,6.93,Cognizant,Cloud Engineer,3.93,Campus,Chennai
+2023,CSE,Mohit Sharma,9.81,Qualcomm,Cloud Engineer,22.16,Campus,Hyderabad
+2023,CSE,Amit Kapoor,8.91,Swiggy,Full Stack Developer,24.39,Campus,Bangalore
+2023,CSE,Krishnan Reddy,8.42,Deloitte,Cloud Engineer,9.58,Off-Campus,Mumbai
+2023,CSE,Deepak Gupta,9.52,Qualcomm,Software Engineer,19.72,Off-Campus,Hyderabad
+2023,CSE,Varun Agarwal,8.86,Microsoft,ML Engineer,43.23,Campus,Hyderabad
+2023,CSE,Ishaan Reddy,6.52,Cognizant,DevOps Engineer,4.56,Campus,Chennai
+2023,CSE,Meera Kumar,7.0,Tech Mahindra,Full Stack Developer,4.53,PPO,Pune
+2023,CSE,Nisha Gupta,7.83,Infosys,Cloud Engineer,4.0,PPO,Bangalore
+2023,CSE,Raj Chopra,7.43,Tech Mahindra,Software Engineer,4.0,Campus,Pune
+2023,CSE,Sara Agarwal,8.62,Qualcomm,Cloud Engineer,20.92,Campus,Hyderabad
+2023,CSE,Priya Gupta,8.63,PhonePe,DevOps Engineer,17.64,Off-Campus,Bangalore
+2023,CSE,Nikhil Kapoor,6.86,TCS,Cloud Engineer,4.68,Campus,Mumbai
+2023,CSE,Naina Pandey,6.46,TCS,ML Engineer,5.1,Campus,Mumbai
+2023,CSE,Aryan Gupta,6.92,Cognizant,Cloud Engineer,3.65,Campus,Chennai
+2023,CSE,Suresh Pandey,8.29,Wipro,ML Engineer,4.63,Off-Campus,Bangalore
+2023,CSE,Vikram Pandey,9.66,Swiggy,ML Engineer,19.71,Campus,Bangalore
+2023,ECE,Priya Gupta,9.83,Bosch,RF Engineer,8.15,PPO,Bangalore
+2023,ECE,Amit Mishra,7.08,TCS,Embedded Engineer,5.13,Off-Campus,Mumbai
+2023,ECE,Kavya Kapoor,9.79,Microsoft,VLSI Engineer,42.11,Campus,Hyderabad
+2023,ECE,Uday Reddy,6.27,Siemens,VLSI Engineer,7.93,Campus,Mumbai
+2023,ECE,Nisha Singh,9.08,Google,VLSI Engineer,39.82,PPO,Bangalore
+2023,ECE,Suresh Iyer,9.11,Flipkart,Embedded Engineer,29.99,Campus,Bangalore
+2023,ECE,Pooja Nair,8.3,Google,Hardware Engineer,38.29,Campus,Bangalore
+2023,ECE,Riya Trivedi,6.44,TCS,IoT Developer,4.47,Off-Campus,Mumbai
+2023,ECE,Varun Gupta,7.76,PhonePe,Hardware Engineer,22.9,Campus,Bangalore
+2023,ECE,Sonal Joshi,7.79,Google,System Engineer,36.7,Campus,Bangalore
+2023,ECE,Rohit Gupta,7.91,Qualcomm,IoT Developer,19.46,Campus,Hyderabad
+2023,ECE,Divya Patel,6.49,Cognizant,RF Engineer,4.26,Campus,Chennai
+2023,ECE,Rahul Kapoor,8.07,Qualcomm,Hardware Engineer,22.36,Campus,Hyderabad
+2023,ECE,Aryan Chopra,8.81,Razorpay,System Engineer,25.02,Off-Campus,Bangalore
+2023,ECE,Nisha Rao,7.56,Flipkart,RF Engineer,26.59,Campus,Bangalore
+2023,ECE,Priya Singh,8.68,Siemens,Embedded Engineer,7.29,Off-Campus,Mumbai
+2023,ECE,Rohit Gupta,8.9,Bosch,IoT Developer,8.44,Campus,Bangalore
+2023,ECE,Tanvi Chopra,7.29,TCS,System Engineer,4.47,Off-Campus,Mumbai
+2023,ECE,Amit Joshi,8.34,Bosch,VLSI Engineer,6.75,Campus,Bangalore
+2023,ECE,Shivam Nair,9.3,Bosch,RF Engineer,8.64,Campus,Bangalore
+2023,ECE,Uday Nair,9.15,Google,Hardware Engineer,44.02,Off-Campus,Bangalore
+2023,ECE,Meera Sharma,6.7,Bosch,RF Engineer,7.77,PPO,Bangalore
+2023,ECE,Aarav Kumar,9.39,Samsung,Embedded Engineer,8.99,Off-Campus,Noida
+2023,ECE,Anjali Trivedi,6.84,HCL,RF Engineer,3.85,Campus,Noida
+2023,ECE,Nikhil Malhotra,8.33,Microsoft,Embedded Engineer,34.47,Off-Campus,Hyderabad
+2023,ECE,Anjali Iyer,7.73,Intel,RF Engineer,18.14,Campus,Bangalore
+2023,ECE,Kavya Trivedi,6.44,HCL,IoT Developer,3.5,Off-Campus,Noida
+2023,ECE,Shreya Trivedi,8.6,Microsoft,Embedded Engineer,35.29,PPO,Hyderabad
+2023,ECE,Aarav Reddy,7.18,Infosys,RF Engineer,4.59,Off-Campus,Bangalore
+2023,ECE,Nikhil Gupta,6.03,Bosch,IoT Developer,7.05,Campus,Bangalore
+2023,ECE,Krishnan Trivedi,8.18,Bosch,Embedded Engineer,6.63,Off-Campus,Bangalore
+2023,ECE,Rohit Sharma,7.79,Amazon,IoT Developer,35.71,Campus,Hyderabad
+2023,ECE,Raj Pandey,7.13,HCL,IoT Developer,3.5,Campus,Noida
+2023,ECE,Sara Agarwal,6.34,Siemens,System Engineer,6.88,Campus,Mumbai
+2023,ECE,Sonal Patel,7.54,Intel,VLSI Engineer,19.49,Campus,Bangalore
+2023,ECE,Ananya Trivedi,8.47,ABB,RF Engineer,7.46,PPO,Bangalore
+2023,ECE,Pooja Singh,6.92,Infosys,VLSI Engineer,3.89,Campus,Bangalore
+2023,ECE,Ananya Kumar,9.71,Siemens,IoT Developer,8.53,Campus,Mumbai
+2023,ECE,Sanjay Malhotra,8.51,Qualcomm,VLSI Engineer,24.86,Campus,Hyderabad
+2023,ME,Sanjay Joshi,9.11,ABB,Quality Engineer,6.7,Campus,Bangalore
+2023,ME,Sara Rao,6.15,Mahindra,Design Engineer,7.15,Campus,Mumbai
+2023,ME,Vikram Kapoor,7.98,Bosch,Design Engineer,7.67,PPO,Bangalore
+2023,ME,Sanjay Malhotra,8.54,Mahindra,Design Engineer,7.17,Campus,Mumbai
+2023,ME,Sanjay Gupta,9.16,Mahindra,Manufacturing Engineer,8.09,Campus,Mumbai
+2023,ME,Akash Nair,8.76,Bosch,Quality Engineer,7.78,Campus,Bangalore
+2023,ME,Priya Joshi,7.51,L&T,Quality Engineer,6.34,Campus,Mumbai
+2023,ME,Ananya Mehta,6.37,Tata Motors,Project Engineer,6.57,Campus,Pune
+2023,ME,Divya Mehta,6.32,Tata Motors,R&D Engineer,6.07,Campus,Pune
+2023,ME,Deepak Kapoor,8.76,Bosch,Quality Engineer,7.32,Campus,Bangalore
+2023,ME,Deepak Trivedi,6.36,Tata Motors,Quality Engineer,6.64,Campus,Pune
+2023,ME,Naina Kumar,9.71,Mahindra,Manufacturing Engineer,8.19,Campus,Mumbai
+2023,ME,Deepak Singh,6.3,L&T,Project Engineer,5.72,Off-Campus,Mumbai
+2023,ME,Akash Mehta,9.42,ABB,Manufacturing Engineer,6.95,Campus,Bangalore
+2023,ME,Ishaan Kapoor,9.16,Siemens,Quality Engineer,8.97,Campus,Mumbai
+2023,ME,Lakshmi Rao,8.38,L&T,Project Engineer,7.4,Campus,Mumbai
+2023,ME,Lakshmi Joshi,9.77,L&T,Quality Engineer,7.27,Off-Campus,Mumbai
+2023,ME,Uday Rao,7.8,Tata Motors,R&D Engineer,7.61,Campus,Pune
+2023,ME,Gaurav Reddy,9.12,Siemens,R&D Engineer,9.31,Campus,Mumbai
+2023,ME,Priya Chopra,9.64,Mahindra,Quality Engineer,7.97,Off-Campus,Mumbai
+2023,ME,Anjali Kumar,7.06,Siemens,Manufacturing Engineer,6.99,Campus,Mumbai
+2023,ME,Sanjay Agarwal,9.63,TCS,Manufacturing Engineer,4.69,Campus,Mumbai
+2023,ME,Rahul Patel,7.46,L&T,Quality Engineer,6.28,Campus,Mumbai
+2023,ME,Divya Singh,6.15,Bosch,R&D Engineer,7.62,Campus,Bangalore
+2023,ME,Sanjay Kapoor,6.02,Bosch,Manufacturing Engineer,6.16,Campus,Bangalore
+2023,ME,Tanvi Kapoor,8.06,Bosch,Design Engineer,8.11,Campus,Bangalore
+2023,ME,Amit Nair,7.64,L&T,R&D Engineer,6.93,Campus,Mumbai
+2023,ME,Vidya Chopra,6.06,Siemens,Quality Engineer,7.98,Off-Campus,Mumbai
+2023,ME,Rohit Sharma,8.4,ABB,Design Engineer,7.57,Campus,Bangalore
+2023,ME,Sonal Agarwal,6.26,Siemens,Project Engineer,7.9,Off-Campus,Mumbai
+2023,ME,Tanvi Sharma,7.52,Bosch,Quality Engineer,6.37,Campus,Bangalore
+2023,Civil,Pooja Patel,7.34,EY,Consultant,7.96,Campus,Gurgaon
+2023,Civil,Nisha Singh,6.17,PwC,Quantity Surveyor,7.61,Campus,Mumbai
+2023,Civil,Shivam Kumar,9.16,L&T,Site Engineer,7.57,PPO,Mumbai
+2023,Civil,Mohit Reddy,6.17,Tata Motors,Project Manager,7.59,Campus,Pune
+2023,Civil,Sneha Mishra,9.86,PwC,Structural Engineer,8.79,Campus,Mumbai
+2023,Civil,Mohit Agarwal,9.36,L&T,Site Engineer,7.92,Campus,Mumbai
+2023,Civil,Priya Pandey,9.47,EY,Project Manager,8.11,PPO,Gurgaon
+2023,Civil,Ishaan Shah,8.7,Mahindra,Site Engineer,7.84,Campus,Mumbai
+2023,Civil,Rohit Patel,7.68,KPMG,Site Engineer,6.53,Campus,Gurgaon
+2023,Civil,Anjali Mehta,8.58,Mahindra,Structural Engineer,6.87,Off-Campus,Mumbai
+2023,Civil,Sanjay Agarwal,7.74,EY,Quantity Surveyor,8.55,Campus,Gurgaon
+2023,Civil,Meera Verma,6.29,EY,Structural Engineer,7.29,Campus,Gurgaon
+2023,Civil,Aditya Singh,9.31,EY,Site Engineer,8.83,Campus,Gurgaon
+2023,Civil,Lakshmi Agarwal,7.41,PwC,Quantity Surveyor,7.0,Campus,Mumbai
+2023,Civil,Priya Agarwal,7.73,L&T,Quantity Surveyor,6.86,Campus,Mumbai
+2023,Civil,Nikhil Iyer,6.97,L&T,Consultant,5.58,Campus,Mumbai
+2023,Civil,Rahul Chopra,6.46,KPMG,Consultant,6.5,Campus,Gurgaon
+2023,Civil,Mohit Shah,6.78,Tata Motors,Quantity Surveyor,7.52,Campus,Pune
+2023,Civil,Anjali Mehta,8.6,EY,Project Manager,7.0,Campus,Gurgaon
+2023,Civil,Gaurav Kumar,9.1,PwC,Structural Engineer,7.97,PPO,Mumbai
+2023,Civil,Lakshmi Shah,6.1,PwC,Consultant,8.17,Campus,Mumbai
+2023,Civil,Deepak Kapoor,9.45,L&T,Quantity Surveyor,6.86,PPO,Mumbai
+2023,Civil,Sonal Pandey,9.0,KPMG,Project Manager,7.76,Campus,Gurgaon
+2023,Civil,Ananya Rao,7.82,PwC,Consultant,7.87,Off-Campus,Mumbai
+2023,Civil,Varun Kumar,8.99,Tata Motors,Site Engineer,7.26,PPO,Pune
+2023,Civil,Aryan Trivedi,6.6,Tata Motors,Structural Engineer,6.11,PPO,Pune
+2023,Civil,Pooja Trivedi,9.49,KPMG,Consultant,6.86,Campus,Gurgaon
+2023,Civil,Meera Singh,8.44,PwC,Structural Engineer,8.51,Campus,Mumbai
+2023,Civil,Varun Malhotra,6.6,EY,Project Manager,7.78,PPO,Gurgaon
+2023,Civil,Uday Verma,9.22,L&T,Consultant,6.35,PPO,Mumbai
+2023,Civil,Manish Reddy,8.99,Deloitte,Consultant,9.4,Campus,Mumbai
+2023,Civil,Mohit Joshi,7.88,KPMG,Quantity Surveyor,7.91,Campus,Gurgaon
+2023,EEE,Gaurav Rao,7.62,ABB,Control Engineer,6.56,Campus,Bangalore
+2023,EEE,Nikhil Agarwal,9.8,Siemens,Electrical Engineer,9.25,Campus,Mumbai
+2023,EEE,Nikhil Nair,7.82,Tata Motors,Electrical Engineer,6.94,Campus,Pune
+2023,EEE,Mohit Mishra,9.37,Siemens,Power Systems Engineer,7.92,Off-Campus,Mumbai
+2023,EEE,Nikhil Malhotra,8.81,ABB,Field Engineer,8.1,Campus,Bangalore
+2023,EEE,Sara Shah,9.43,ABB,Field Engineer,6.73,PPO,Bangalore
+2023,EEE,Sara Nair,6.84,Mahindra,Field Engineer,5.62,Campus,Mumbai
+2023,EEE,Shivam Joshi,8.09,Bosch,Control Engineer,7.38,Off-Campus,Bangalore
+2023,EEE,Raj Agarwal,6.18,L&T,Field Engineer,6.64,Campus,Mumbai
+2023,EEE,Mohit Patel,7.51,ABB,Field Engineer,7.71,Campus,Bangalore
+2023,EEE,Vikram Gupta,6.5,Bosch,Control Engineer,6.97,Off-Campus,Bangalore
+2023,EEE,Tanvi Agarwal,8.94,ABB,Electrical Engineer,7.8,Campus,Bangalore
+2023,EEE,Akash Verma,6.53,Mahindra,Power Systems Engineer,7.09,Campus,Mumbai
+2023,EEE,Vidya Trivedi,6.55,Samsung,Field Engineer,8.98,Campus,Noida
+2023,EEE,Naina Malhotra,7.31,Bosch,Control Engineer,7.36,Off-Campus,Bangalore
+2023,EEE,Shivam Sharma,7.44,Intel,Control Engineer,16.02,Campus,Bangalore
+2023,EEE,Aditya Kapoor,7.85,Intel,Field Engineer,19.78,Off-Campus,Bangalore
+2023,EEE,Krishnan Verma,8.28,Siemens,Instrumentation Engineer,8.24,Off-Campus,Mumbai
+2023,EEE,Divya Nair,6.12,TCS,Control Engineer,3.97,Campus,Mumbai
+2023,EEE,Riya Singh,7.61,ABB,Instrumentation Engineer,6.99,Off-Campus,Bangalore
+2023,EEE,Amit Singh,8.02,Bosch,Field Engineer,7.13,Off-Campus,Bangalore
+2023,EEE,Rahul Mehta,9.73,ABB,Control Engineer,8.68,Campus,Bangalore
+2023,EEE,Manish Kapoor,7.89,ABB,Control Engineer,6.8,Campus,Bangalore
+2023,EEE,Mohit Reddy,8.69,ABB,Control Engineer,7.12,Campus,Bangalore
+2023,EEE,Mohit Gupta,8.24,Bosch,Control Engineer,7.31,PPO,Bangalore
+2023,EEE,Divya Joshi,6.16,TCS,Control Engineer,3.93,PPO,Mumbai
+2024,CSE,Suresh Iyer,9.64,Swiggy,DevOps Engineer,20.4,Campus,Bangalore
+2024,CSE,Lakshmi Nair,6.2,Cognizant,Software Engineer,3.76,Campus,Chennai
+2024,CSE,Riya Mehta,8.8,Microsoft,DevOps Engineer,40.61,Campus,Hyderabad
+2024,CSE,Gaurav Pandey,8.55,PhonePe,Full Stack Developer,20.33,Campus,Bangalore
+2024,CSE,Nikhil Joshi,8.52,Microsoft,Cloud Engineer,40.19,Campus,Hyderabad
+2024,CSE,Akash Kumar,7.63,Wipro,ML Engineer,4.48,Campus,Bangalore
+2024,CSE,Shreya Kumar,9.65,Swiggy,DevOps Engineer,25.28,Campus,Bangalore
+2024,CSE,Vidya Gupta,9.62,Zomato,DevOps Engineer,17.62,PPO,Gurgaon
+2024,CSE,Sonal Shah,9.47,Amazon,Data Analyst,36.11,Campus,Hyderabad
+2024,CSE,Aryan Mehta,6.63,HCL,Software Engineer,4.07,Off-Campus,Noida
+2024,CSE,Nisha Joshi,8.21,HCL,ML Engineer,3.88,Off-Campus,Noida
+2024,CSE,Rohit Trivedi,7.28,HCL,Data Analyst,4.18,Campus,Noida
+2024,CSE,Shivam Mehta,9.65,Google,Full Stack Developer,39.78,Campus,Bangalore
+2024,CSE,Nisha Joshi,8.27,HDFC Bank,Cloud Engineer,5.93,Off-Campus,Mumbai
+2024,CSE,Lakshmi Verma,8.6,PhonePe,DevOps Engineer,19.32,Campus,Bangalore
+2024,CSE,Naina Gupta,8.49,Cognizant,Data Analyst,4.38,Campus,Chennai
+2024,CSE,Shivam Singh,7.77,HDFC Bank,ML Engineer,6.48,Off-Campus,Mumbai
+2024,CSE,Suresh Reddy,8.97,Qualcomm,Software Engineer,24.27,Off-Campus,Hyderabad
+2024,CSE,Sonal Rao,8.06,Accenture,Software Engineer,4.51,Campus,Mumbai
+2024,CSE,Tanvi Trivedi,6.79,Cognizant,DevOps Engineer,3.67,Campus,Chennai
+2024,CSE,Sanjay Gupta,8.65,Intel,ML Engineer,18.43,Off-Campus,Bangalore
+2024,CSE,Amit Rao,6.51,HCL,ML Engineer,3.85,Campus,Noida
+2024,CSE,Naina Sharma,7.54,TCS,Software Engineer,4.99,Campus,Mumbai
+2024,CSE,Rohit Agarwal,8.73,Samsung,Software Engineer,11.43,PPO,Noida
+2024,CSE,Shivam Verma,7.12,Infosys,Cloud Engineer,4.57,Off-Campus,Bangalore
+2024,CSE,Riya Agarwal,9.87,Razorpay,ML Engineer,25.48,PPO,Bangalore
+2024,CSE,Rahul Patel,8.66,Qualcomm,Full Stack Developer,24.97,Campus,Hyderabad
+2024,CSE,Aryan Kumar,9.87,Razorpay,Data Analyst,26.08,Off-Campus,Bangalore
+2024,CSE,Aarav Sharma,9.82,PhonePe,DevOps Engineer,21.89,Campus,Bangalore
+2024,CSE,Rahul Nair,6.97,Wipro,Cloud Engineer,3.5,Campus,Bangalore
+2024,CSE,Aryan Verma,9.16,Razorpay,Software Engineer,26.51,PPO,Bangalore
+2024,CSE,Lakshmi Reddy,6.26,Cognizant,Cloud Engineer,3.53,Campus,Chennai
+2024,CSE,Amit Nair,8.89,Razorpay,Software Engineer,25.11,Campus,Bangalore
+2024,ECE,Mohit Nair,9.18,Qualcomm,RF Engineer,23.17,Off-Campus,Hyderabad
+2024,ECE,Lakshmi Joshi,9.42,ABB,Embedded Engineer,7.14,Campus,Bangalore
+2024,ECE,Tanvi Malhotra,9.43,Zomato,System Engineer,19.41,Campus,Gurgaon
+2024,ECE,Amit Agarwal,9.67,Samsung,System Engineer,11.12,Campus,Noida
+2024,ECE,Riya Singh,7.17,Infosys,VLSI Engineer,4.57,Campus,Bangalore
+2024,ECE,Naina Singh,9.14,Microsoft,IoT Developer,39.35,PPO,Hyderabad
+2024,ECE,Sonal Singh,7.51,Samsung,System Engineer,8.81,Campus,Noida
+2024,ECE,Priya Patel,8.09,Razorpay,IoT Developer,21.96,Campus,Bangalore
+2024,ECE,Vidya Verma,9.41,Razorpay,Hardware Engineer,28.01,Campus,Bangalore
+2024,ECE,Tanvi Reddy,7.87,Qualcomm,VLSI Engineer,20.96,PPO,Hyderabad
+2024,ECE,Karan Gupta,8.91,Siemens,Hardware Engineer,9.34,Off-Campus,Mumbai
+2024,ECE,Kavya Mishra,9.57,Qualcomm,IoT Developer,24.59,Campus,Hyderabad
+2024,ECE,Pooja Joshi,7.02,Cognizant,Hardware Engineer,4.58,Campus,Chennai
+2024,ECE,Shivam Mehta,9.57,Bosch,VLSI Engineer,7.57,Campus,Bangalore
+2024,ECE,Divya Sharma,7.02,Cognizant,VLSI Engineer,4.2,Campus,Chennai
+2024,ECE,Karan Mehta,6.9,Cognizant,Hardware Engineer,4.51,Campus,Chennai
+2024,ECE,Nisha Iyer,8.98,Siemens,System Engineer,9.49,Campus,Mumbai
+2024,ECE,Sara Kumar,8.86,Bosch,System Engineer,7.04,Off-Campus,Bangalore
+2024,ECE,Ishaan Chopra,9.86,Microsoft,Embedded Engineer,39.13,Off-Campus,Hyderabad
+2024,ECE,Amit Sharma,7.61,PhonePe,VLSI Engineer,17.59,Campus,Bangalore
+2024,ECE,Sneha Rao,7.46,Cognizant,System Engineer,4.41,PPO,Chennai
+2024,ECE,Shreya Sharma,6.03,Cognizant,Hardware Engineer,3.99,Campus,Chennai
+2024,ECE,Meera Chopra,9.81,Google,System Engineer,42.87,Off-Campus,Bangalore
+2024,ECE,Ishaan Gupta,9.58,ABB,IoT Developer,7.04,Campus,Bangalore
+2024,ECE,Manish Agarwal,7.04,HCL,System Engineer,3.5,PPO,Noida
+2024,ECE,Uday Nair,9.86,PhonePe,Embedded Engineer,19.66,Off-Campus,Bangalore
+2024,ECE,Akash Patel,7.58,Samsung,Embedded Engineer,9.82,Campus,Noida
+2024,ME,Rohit Mehta,8.21,Bosch,Manufacturing Engineer,8.42,PPO,Bangalore
+2024,ME,Kavya Malhotra,7.85,L&T,Quality Engineer,7.58,Off-Campus,Mumbai
+2024,ME,Suresh Malhotra,8.57,Siemens,Manufacturing Engineer,9.27,Campus,Mumbai
+2024,ME,Varun Singh,8.93,Mahindra,Quality Engineer,7.7,PPO,Mumbai
+2024,ME,Gaurav Malhotra,6.94,TCS,R&D Engineer,4.74,Campus,Mumbai
+2024,ME,Deepak Patel,7.95,Mahindra,Design Engineer,5.91,Campus,Mumbai
+2024,ME,Nisha Kapoor,9.0,ABB,Design Engineer,7.38,Off-Campus,Bangalore
+2024,ME,Meera Rao,7.91,Mahindra,Manufacturing Engineer,6.88,Campus,Mumbai
+2024,ME,Varun Mishra,6.33,ABB,Design Engineer,6.57,Campus,Bangalore
+2024,ME,Anjali Iyer,6.6,Mahindra,R&D Engineer,7.05,Campus,Mumbai
+2024,ME,Nikhil Agarwal,6.42,L&T,Quality Engineer,7.36,Campus,Mumbai
+2024,ME,Arjun Singh,6.34,TCS,R&D Engineer,4.43,Campus,Mumbai
+2024,ME,Arjun Sharma,6.35,Siemens,Quality Engineer,6.85,Campus,Mumbai
+2024,ME,Rahul Sharma,7.14,TCS,Project Engineer,4.92,Off-Campus,Mumbai
+2024,ME,Lakshmi Malhotra,8.03,Tata Motors,Quality Engineer,6.87,Campus,Pune
+2024,ME,Meera Shah,6.57,Siemens,R&D Engineer,7.65,Campus,Mumbai
+2024,ME,Ananya Agarwal,6.98,ABB,Project Engineer,7.46,Campus,Bangalore
+2024,ME,Karan Rao,6.42,Tata Motors,Project Engineer,5.79,Campus,Pune
+2024,ME,Rahul Mehta,7.72,TCS,Project Engineer,5.14,Off-Campus,Mumbai
+2024,ME,Deepak Joshi,7.25,Mahindra,R&D Engineer,5.99,Campus,Mumbai
+2024,ME,Nikhil Joshi,8.87,Tata Motors,Manufacturing Engineer,7.34,Campus,Pune
+2024,ME,Nikhil Mishra,7.09,L&T,Project Engineer,6.32,Campus,Mumbai
+2024,ME,Karan Malhotra,9.89,Siemens,R&D Engineer,9.09,Campus,Mumbai
+2024,ME,Kavya Rao,9.11,Mahindra,R&D Engineer,6.29,Off-Campus,Mumbai
+2024,ME,Shreya Singh,8.47,ABB,R&D Engineer,6.92,Campus,Bangalore
+2024,Civil,Vidya Shah,8.27,PwC,Quantity Surveyor,8.4,PPO,Mumbai
+2024,Civil,Suresh Verma,9.08,Mahindra,Consultant,7.52,Off-Campus,Mumbai
+2024,Civil,Anjali Gupta,9.0,EY,Consultant,8.47,Campus,Gurgaon
+2024,Civil,Akash Malhotra,9.84,EY,Project Manager,8.68,PPO,Gurgaon
+2024,Civil,Rohit Gupta,6.04,Mahindra,Consultant,5.96,Off-Campus,Mumbai
+2024,Civil,Varun Malhotra,6.86,Mahindra,Consultant,6.29,Off-Campus,Mumbai
+2024,Civil,Sneha Singh,7.35,L&T,Site Engineer,6.57,Campus,Mumbai
+2024,Civil,Aryan Singh,7.36,Mahindra,Quantity Surveyor,6.52,Campus,Mumbai
+2024,Civil,Pooja Shah,6.38,EY,Project Manager,7.94,Campus,Gurgaon
+2024,Civil,Akash Gupta,6.09,Mahindra,Structural Engineer,6.79,Off-Campus,Mumbai
+2024,Civil,Lakshmi Trivedi,6.68,Tata Motors,Quantity Surveyor,6.46,Campus,Pune
+2024,Civil,Krishnan Mishra,8.46,Tata Motors,Site Engineer,7.52,Campus,Pune
+2024,Civil,Vikram Reddy,7.75,Deloitte,Structural Engineer,8.44,Off-Campus,Mumbai
+2024,Civil,Meera Patel,8.25,KPMG,Project Manager,8.16,Campus,Gurgaon
+2024,Civil,Karan Rao,6.44,EY,Project Manager,8.32,Campus,Gurgaon
+2024,Civil,Vidya Mishra,8.38,PwC,Quantity Surveyor,7.49,Campus,Mumbai
+2024,Civil,Vikram Kumar,9.17,EY,Consultant,8.83,PPO,Gurgaon
+2024,Civil,Anjali Singh,7.22,Tata Motors,Structural Engineer,6.47,Campus,Pune
+2024,Civil,Sneha Mishra,7.63,Tata Motors,Quantity Surveyor,7.14,Campus,Pune
+2024,Civil,Suresh Kumar,8.16,Deloitte,Quantity Surveyor,8.31,Campus,Mumbai
+2024,Civil,Vikram Verma,9.38,L&T,Quantity Surveyor,7.18,Campus,Mumbai
+2024,Civil,Tanvi Trivedi,8.55,Deloitte,Quantity Surveyor,9.44,Campus,Mumbai
+2024,Civil,Shreya Kumar,6.32,L&T,Site Engineer,7.08,Campus,Mumbai
+2024,Civil,Meera Nair,8.1,Tata Motors,Quantity Surveyor,7.7,Campus,Pune
+2024,Civil,Tanvi Trivedi,6.44,L&T,Project Manager,6.05,Campus,Mumbai
+2024,Civil,Suresh Verma,8.96,Deloitte,Site Engineer,9.21,PPO,Mumbai
+2024,Civil,Lakshmi Joshi,9.41,L&T,Site Engineer,7.12,Campus,Mumbai
+2024,Civil,Sanjay Gupta,9.02,Tata Motors,Project Manager,6.81,Off-Campus,Pune
+2024,Civil,Vikram Pandey,6.65,Tata Motors,Site Engineer,7.38,Off-Campus,Pune
+2024,Civil,Uday Agarwal,8.08,PwC,Project Manager,8.42,Campus,Mumbai
+2024,EEE,Sneha Gupta,6.53,Siemens,Power Systems Engineer,8.78,PPO,Mumbai
+2024,EEE,Deepak Nair,6.57,Mahindra,Instrumentation Engineer,7.14,Off-Campus,Mumbai
+2024,EEE,Shreya Singh,8.25,Tata Motors,Electrical Engineer,7.44,Campus,Pune
+2024,EEE,Anjali Mishra,8.01,Tata Motors,Instrumentation Engineer,7.5,Off-Campus,Pune
+2024,EEE,Shreya Mehta,8.27,TCS,Control Engineer,4.33,PPO,Mumbai
+2024,EEE,Ananya Chopra,7.55,Siemens,Control Engineer,8.73,Campus,Mumbai
+2024,EEE,Mohit Mehta,8.13,Siemens,Control Engineer,8.29,Campus,Mumbai
+2024,EEE,Amit Verma,6.39,ABB,Power Systems Engineer,5.98,PPO,Bangalore
+2024,EEE,Sanjay Rao,6.0,Siemens,Power Systems Engineer,7.1,Off-Campus,Mumbai
+2024,EEE,Naina Kumar,9.41,Tata Motors,Electrical Engineer,6.69,Campus,Pune
+2024,EEE,Priya Kumar,6.2,Intel,Power Systems Engineer,16.95,Off-Campus,Bangalore
+2024,EEE,Rohit Patel,8.74,L&T,Field Engineer,6.46,Campus,Mumbai
+2024,EEE,Krishnan Trivedi,8.65,L&T,Electrical Engineer,6.04,Campus,Mumbai
+2024,EEE,Rohit Singh,7.86,ABB,Electrical Engineer,7.01,Off-Campus,Bangalore
+2024,EEE,Arjun Mehta,7.43,Tata Motors,Power Systems Engineer,6.19,Off-Campus,Pune
+2024,EEE,Divya Patel,8.07,L&T,Control Engineer,7.04,Campus,Mumbai
+2024,EEE,Kavya Singh,9.59,Samsung,Electrical Engineer,10.81,Off-Campus,Noida
+2024,EEE,Arjun Singh,8.93,Samsung,Instrumentation Engineer,10.73,Campus,Noida
+2024,EEE,Nikhil Singh,6.97,Intel,Field Engineer,15.75,Campus,Bangalore
+2024,EEE,Vidya Joshi,9.04,TCS,Control Engineer,4.47,Off-Campus,Mumbai
+2024,EEE,Kavya Trivedi,8.37,ABB,Electrical Engineer,7.93,Campus,Bangalore
+2024,EEE,Lakshmi Shah,7.5,ABB,Field Engineer,7.15,Campus,Bangalore
+2024,EEE,Aarav Agarwal,9.64,Siemens,Instrumentation Engineer,8.33,Off-Campus,Mumbai
+2024,EEE,Priya Chopra,8.66,ABB,Electrical Engineer,8.45,Off-Campus,Bangalore
+2024,EEE,Varun Patel,6.05,ABB,Instrumentation Engineer,6.03,Campus,Bangalore
+2024,EEE,Sneha Joshi,8.45,Bosch,Instrumentation Engineer,8.21,Campus,Bangalore
+2024,EEE,Anjali Chopra,8.1,Siemens,Field Engineer,7.61,Campus,Mumbai
+2024,EEE,Kavya Singh,8.09,Siemens,Electrical Engineer,8.33,Off-Campus,Mumbai
+2024,EEE,Naina Pandey,8.85,ABB,Instrumentation Engineer,6.63,Campus,Bangalore
+2024,EEE,Aryan Rao,8.39,L&T,Power Systems Engineer,6.55,Off-Campus,Mumbai
+2024,EEE,Aryan Sharma,8.76,TCS,Control Engineer,4.37,Campus,Mumbai
