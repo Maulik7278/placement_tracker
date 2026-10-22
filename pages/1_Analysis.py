@@ -1,4 +1,5 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -6,8 +7,8 @@ from streamlit_folium import st_folium
 import sys, os
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from utils.data_loader import get_data, apply_filters
-from utils.map_builder import build_placement_map, build_company_map
+from utils.data_loader import get_data, apply_filters, range_slider
+from utils.map_builder import build_placement_map, build_company_map, get_coords
 
 st.set_page_config(page_title="Analysis | Placement Tracker", page_icon="📊", layout="wide")
 
@@ -24,9 +25,12 @@ st.markdown("""
 with st.sidebar:
     st.markdown("## 🎓 Placement Tracker")
     st.markdown("---")
-    st.markdown("### 📂 Upload Your Data")
-    uploaded_file = st.file_uploader("Upload CSV or Excel", type=["csv", "xlsx"])
-    df_full = get_data(uploaded_file)
+    st.markdown("### 🌐 Data Source")
+    df_full = get_data()
+    st.caption(f"Live from API · {len(df_full)} student records")
+    if st.button("🔄 Refresh data", use_container_width=True):
+        st.cache_data.clear()
+        st.rerun()
     st.markdown("---")
     st.markdown("### 🔍 Filters")
     all_years = sorted(df_full["Year"].unique().tolist())
@@ -35,12 +39,8 @@ with st.sidebar:
     branches = st.multiselect("🏫 Branch", all_branches, default=all_branches)
     all_types = sorted(df_full["Placement_Type"].unique().tolist())
     placement_types = st.multiselect("📋 Placement Type", all_types, default=all_types)
-    pkg_min = float(df_full["Package_LPA"].min())
-    pkg_max = float(df_full["Package_LPA"].max())
-    pkg_range = st.slider("💰 Package Range (LPA)", pkg_min, pkg_max, (pkg_min, pkg_max), step=0.5)
-    cgpa_min = float(df_full["CGPA"].min())
-    cgpa_max = float(df_full["CGPA"].max())
-    cgpa_range = st.slider("📊 CGPA Range", cgpa_min, cgpa_max, (cgpa_min, cgpa_max), step=0.1)
+    pkg_range = range_slider("💰 Package Range (LPA)", df_full["Package_LPA"], 0.5)
+    cgpa_range = range_slider("📊 CGPA Range", df_full["CGPA"], 0.1)
     st.markdown("---")
 
     @st.cache_data
@@ -191,10 +191,18 @@ with tab3:
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
-        cgpa_bins = pd.cut(df["CGPA"], bins=[6,7,7.5,8,8.5,9,10],
-                           labels=["6-7","7-7.5","7.5-8","8-8.5","8.5-9","9-10"])
         df2 = df.copy()
-        df2["CGPA_Band"] = cgpa_bins
+        if df2["CGPA"].min() >= 6 and df2["CGPA"].max() <= 10:
+            df2["CGPA_Band"] = pd.cut(
+                df2["CGPA"], bins=[6, 7, 7.5, 8, 8.5, 9, 10], include_lowest=True,
+                labels=["6-7", "7-7.5", "7.5-8", "8-8.5", "8.5-9", "9-10"])
+        else:
+            # CGPA outside the usual 6-10 range (or a different scale): use data-driven bands
+            edges = sorted(set(np.round(np.linspace(df2["CGPA"].min(), df2["CGPA"].max(), 7), 2)))
+            if len(edges) < 2:
+                df2["CGPA_Band"] = df2["CGPA"].round(2).astype(str)
+            else:
+                df2["CGPA_Band"] = pd.cut(df2["CGPA"], bins=edges, include_lowest=True).astype(str)
         band_pkg = df2.groupby("CGPA_Band", observed=True)["Package_LPA"].mean().reset_index()
         band_pkg["Package_LPA"] = band_pkg["Package_LPA"].round(2)
         fig2 = px.bar(band_pkg, x="CGPA_Band", y="Package_LPA",
@@ -223,6 +231,9 @@ with tab4:
     col_map, col_stats = st.columns([3, 1])
 
     with col_map:
+        unmapped = sorted(c for c in df["City"].unique() if get_coords(c) is None)
+        if unmapped:
+            st.warning("📍 Not shown on the map (no coordinates yet): " + ", ".join(unmapped))
         with st.spinner("Building map..."):
             m = build_placement_map(df, show_heatmap=show_heatmap)
             st_folium(m, width=750, height=500, returned_objects=[])

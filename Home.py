@@ -7,7 +7,7 @@ import os
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-from utils.data_loader import get_data, apply_filters, compute_kpis, load_sample_data
+from utils.data_loader import get_data, apply_filters, range_slider, compute_kpis
 from utils.api_fetcher import fetch_job_market_data, compare_campus_vs_market
 
 st.set_page_config(
@@ -51,14 +51,12 @@ st.markdown("""
 with st.sidebar:
     st.markdown("## 🎓 Placement Tracker")
     st.markdown("---")
-    st.markdown("### 📂 Upload Your Data")
-    uploaded_file = st.file_uploader(
-        "Upload CSV or Excel file",
-        type=["csv", "xlsx"],
-        help="Columns needed: Year, Branch, Student_Name, CGPA, Company, Role, Package_LPA, Placement_Type, City"
-    )
-
-    df_full = get_data(uploaded_file)
+    st.markdown("### 🌐 Data Source")
+    df_full = get_data()
+    st.caption(f"Live from API · {len(df_full)} student records")
+    if st.button("🔄 Refresh data", use_container_width=True):
+        st.cache_data.clear()
+        st.rerun()
 
     st.markdown("---")
     st.markdown("### 🔍 Filters")
@@ -72,13 +70,8 @@ with st.sidebar:
     all_types = sorted(df_full["Placement_Type"].unique().tolist())
     placement_types = st.multiselect("📋 Placement Type", all_types, default=all_types)
 
-    pkg_min = float(df_full["Package_LPA"].min())
-    pkg_max = float(df_full["Package_LPA"].max())
-    pkg_range = st.slider("💰 Package Range (LPA)", pkg_min, pkg_max, (pkg_min, pkg_max), step=0.5)
-
-    cgpa_min = float(df_full["CGPA"].min())
-    cgpa_max = float(df_full["CGPA"].max())
-    cgpa_range = st.slider("📊 CGPA Range", cgpa_min, cgpa_max, (cgpa_min, cgpa_max), step=0.1)
+    pkg_range = range_slider("💰 Package Range (LPA)", df_full["Package_LPA"], 0.5)
+    cgpa_range = range_slider("📊 CGPA Range", df_full["CGPA"], 0.1)
 
     st.markdown("---")
 
@@ -95,9 +88,6 @@ with st.sidebar:
         mime="text/csv"
     )
 
-    using_sample = uploaded_file is None
-    if using_sample:
-        st.info("📌 Using sample data. Upload your own CSV to analyze real data.")
 
 # ── Apply filters ─────────────────────────────────────────────────────────────
 df = apply_filters(df_full, years, branches, placement_types, pkg_range, cgpa_range)
@@ -267,4 +257,4 @@ if comparison is not None and not comparison.empty:
     )
 
 st.markdown("---")
-st.caption("💡 **College Placement Tracker** | Built with Streamlit & Plotly | Data refreshes on upload")
+st.caption("💡 **College Placement Tracker** | Built with Streamlit & Plotly | Student data loaded live from API")

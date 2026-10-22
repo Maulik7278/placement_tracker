@@ -1,46 +1,129 @@
-import pandas as pd
-import numpy as np
-import streamlit as st
+import io
+import json
 import os
+import re
 
-SAMPLE_DATA_PATH = os.path.join(os.path.dirname(__file__), "../assets/sample_data.csv")
+import numpy as np
+import pandas as pd
+import requests
+import streamlit as st
+
+API_URL = os.environ.get(
+    "STUDENT_DATA_API_URL",
+    "https://gist.githubusercontent.com/Maulik7278/577f73f18ea8f3dd584e0e8210ac9bcb/raw/gistfile1.txt",
+)
 
 REQUIRED_COLUMNS = ["Year", "Branch", "Student_Name", "CGPA", "Company", "Role",
                     "Package_LPA", "Placement_Type", "City"]
 
-@st.cache_data
-def load_sample_data():
-    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../assets/sample_data.csv")
-    df = pd.read_csv(path)
-    df["Year"] = df["Year"].astype(int)
-    return df
+# Alternative header names the API might use -> our canonical column names
+_COLUMN_ALIASES = {
+    "year": "Year", "batch": "Year", "passing_year": "Year", "placement_year": "Year",
+    "branch": "Branch", "department": "Branch", "dept": "Branch", "stream": "Branch",
+    "student_name": "Student_Name", "studentname": "Student_Name", "name": "Student_Name", "student": "Student_Name",
+    "cgpa": "CGPA", "gpa": "CGPA",
+    "company": "Company", "company_name": "Company", "recruiter": "Company",
+    "role": "Role", "job_role": "Role", "designation": "Role", "position": "Role",
+    "package_lpa": "Package_LPA", "package": "Package_LPA", "lpa": "Package_LPA", "ctc": "Package_LPA",
+    "placement_type": "Placement_Type", "type": "Placement_Type", "placementtype": "Placement_Type",
+    "city": "City", "location": "City",
+}
 
-def load_uploaded_data(uploaded_file):
+
+class DataLoadError(Exception):
+    """Raised when student data cannot be fetched or parsed from the API."""
+
+
+def _to_dataframe(resp):
+    """Turn an HTTP response into a DataFrame. Supports JSON (list or wrapped list) and CSV text."""
+    text = resp.text.strip()
+    if not text:
+        raise DataLoadError("The API returned an empty response.")
+
+    # 1) JSON
     try:
-        if uploaded_file.name.endswith(".csv"):
-            df = pd.read_csv(uploaded_file)
-        else:
-            df = pd.read_excel(uploaded_file)
-        missing = [c for c in REQUIRED_COLUMNS if c not in df.columns]
-        if missing:
-            st.error(f"Missing columns: {', '.join(missing)}")
-            return None
-        df["Year"] = df["Year"].astype(int)
-        df["Package_LPA"] = pd.to_numeric(df["Package_LPA"], errors="coerce")
-        df["CGPA"] = pd.to_numeric(df["CGPA"], errors="coerce")
-        df = df.dropna(subset=["Package_LPA", "CGPA"])
-        st.success(f"✅ Loaded {len(df)} records successfully!")
-        return df
-    except Exception as e:
-        st.error(f"Error reading file: {e}")
-        return None
+        payload = json.loads(text.lstrip("\ufeff"))
+    except ValueError:
+        payload = None
 
-def get_data(uploaded_file=None):
-    if uploaded_file is not None:
-        df = load_uploaded_data(uploaded_file)
-        if df is not None:
-            return df
-    return load_sample_data()
+    if payload is not None:
+        if isinstance(payload, dict):
+            # {"data": [...]} / {"students": [...]} / etc. -> first list value
+            lists = [v for v in payload.values() if isinstance(v, list)]
+            if lists:
+                payload = lists[0]
+            else:
+                payload = [payload]
+        if not isinstance(payload, list) or not payload:
+            raise DataLoadError("The API returned JSON, but it contains no student records.")
+        return pd.json_normalize(payload)
+
+    # 2) CSV text
+    try:
+        return pd.read_csv(io.StringIO(text.lstrip("\ufeff")), sep=None, engine="python")
+    except Exception as e:
+        raise DataLoadError(f"Could not parse the API response as JSON or CSV: {e}")
+
+
+def _normalize(df):
+    """Rename columns to canonical names, validate, and fix dtypes."""
+    renamed = {}
+    for col in df.columns:
+        key = re.sub(r"[\s\-]+", "_", str(col).strip().lower())
+        renamed[col] = _COLUMN_ALIASES.get(key, str(col).strip())
+    df = df.rename(columns=renamed)
+
+    missing = [c for c in REQUIRED_COLUMNS if c not in df.columns]
+    if missing:
+        raise DataLoadError(
+            f"API data is missing columns: {', '.join(missing)}. "
+            f"Found: {', '.join(map(str, df.columns))}"
+        )
+
+    df = df[REQUIRED_COLUMNS].copy()
+    for c in ["Year", "Package_LPA", "CGPA"]:
+        df[c] = pd.to_numeric(
+            df[c].astype(str).str.replace(r"[^0-9.\-]", "", regex=True), errors="coerce"
+        )
+    df = df.dropna(subset=["Year", "Package_LPA", "CGPA"])
+    if df.empty:
+        raise DataLoadError("No valid student records found after cleaning the API data.")
+    df["Year"] = df["Year"].astype(int)
+    for c in ["Branch", "Student_Name", "Company", "Role", "Placement_Type", "City"]:
+        df[c] = df[c].astype(str).str.strip()
+    return df.reset_index(drop=True)
+
+
+@st.cache_data(ttl=600, show_spinner="Fetching student data from API...")
+def fetch_student_data(url=API_URL):
+    """Fetch student placement data from the API (cached for 10 minutes)."""
+    try:
+        resp = requests.get(url, timeout=15)
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        raise DataLoadError(f"Could not reach the student data API: {e}")
+    return _normalize(_to_dataframe(resp))
+
+
+def get_data():
+    """Load student data from the API. Shows an error with a retry button and stops the page on failure."""
+    try:
+        return fetch_student_data()
+    except DataLoadError as e:
+        st.error(f"❌ Failed to load student data from the API.\n\n{e}")
+        if st.button("🔄 Retry"):
+            st.cache_data.clear()
+            st.rerun()
+        st.stop()
+
+def range_slider(label, series, step):
+    """Range slider that doesn't crash when min == max (e.g. tiny or uniform data)."""
+    lo, hi = float(series.min()), float(series.max())
+    if lo >= hi:
+        st.caption(f"{label}: all values are {lo:g}")
+        return (lo, hi)
+    return st.slider(label, lo, hi, (lo, hi), step=step)
+
 
 def apply_filters(df, years, branches, placement_types, pkg_range, cgpa_range):
     filtered = df.copy()

@@ -3,7 +3,7 @@ import pandas as pd
 import sys, os
 
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
-from utils.data_loader import get_data, apply_filters
+from utils.data_loader import get_data, apply_filters, range_slider
 
 st.set_page_config(page_title="Data | Placement Tracker", page_icon="📋", layout="wide")
 
@@ -20,9 +20,12 @@ st.markdown("""
 with st.sidebar:
     st.markdown("## 🎓 Placement Tracker")
     st.markdown("---")
-    st.markdown("### 📂 Upload Your Data")
-    uploaded_file = st.file_uploader("Upload CSV or Excel", type=["csv", "xlsx"])
-    df_full = get_data(uploaded_file)
+    st.markdown("### 🌐 Data Source")
+    df_full = get_data()
+    st.caption(f"Live from API · {len(df_full)} student records")
+    if st.button("🔄 Refresh data", use_container_width=True):
+        st.cache_data.clear()
+        st.rerun()
     st.markdown("---")
     st.markdown("### 🔍 Filters")
     all_years = sorted(df_full["Year"].unique().tolist())
@@ -31,12 +34,8 @@ with st.sidebar:
     branches = st.multiselect("🏫 Branch", all_branches, default=all_branches)
     all_types = sorted(df_full["Placement_Type"].unique().tolist())
     placement_types = st.multiselect("📋 Placement Type", all_types, default=all_types)
-    pkg_min = float(df_full["Package_LPA"].min())
-    pkg_max = float(df_full["Package_LPA"].max())
-    pkg_range = st.slider("💰 Package Range (LPA)", pkg_min, pkg_max, (pkg_min, pkg_max), step=0.5)
-    cgpa_min = float(df_full["CGPA"].min())
-    cgpa_max = float(df_full["CGPA"].max())
-    cgpa_range = st.slider("📊 CGPA Range", cgpa_min, cgpa_max, (cgpa_min, cgpa_max), step=0.1)
+    pkg_range = range_slider("💰 Package Range (LPA)", df_full["Package_LPA"], 0.5)
+    cgpa_range = range_slider("📊 CGPA Range", df_full["CGPA"], 0.1)
     st.markdown("---")
 
 df = apply_filters(df_full, years, branches, placement_types, pkg_range, cgpa_range)

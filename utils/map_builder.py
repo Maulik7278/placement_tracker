@@ -11,14 +11,45 @@ CITY_COORDS = {
     "Delhi": (28.7041, 77.1025),
     "Noida": (28.5355, 77.3910),
     "Gurgaon": (28.4595, 77.0266),
+    "Kolkata": (22.5726, 88.3639),
+    "Ahmedabad": (23.0225, 72.5714),
+    "Jaipur": (26.9124, 75.7873),
+    "Kochi": (9.9312, 76.2673),
+    "Coimbatore": (11.0168, 76.9558),
+    "Chandigarh": (30.7333, 76.7794),
+    "Indore": (22.7196, 75.8577),
+    "Nagpur": (21.1458, 79.0882),
+    "Lucknow": (26.8467, 80.9462),
+    "Thiruvananthapuram": (8.5241, 76.9366),
+    "Mysore": (12.2958, 76.6394),
+    "Surat": (21.1702, 72.8311),
+    "Vadodara": (22.3072, 73.1812),
+    "Bhubaneswar": (20.2961, 85.8245),
+    "Visakhapatnam": (17.6868, 83.2185),
 }
+
+_CITY_ALIASES = {
+    "bengaluru": "Bangalore", "gurugram": "Gurgaon",
+    "new delhi": "Delhi", "delhi ncr": "Delhi", "ncr": "Delhi",
+    "bombay": "Mumbai", "navi mumbai": "Mumbai", "madras": "Chennai",
+    "calcutta": "Kolkata", "mysuru": "Mysore", "trivandrum": "Thiruvananthapuram",
+    "vizag": "Visakhapatnam", "cochin": "Kochi",
+}
+
+
+def get_coords(city):
+    """Return (lat, lon) for a city name (case-insensitive, with common aliases), or None."""
+    key = str(city).strip().lower()
+    name = _CITY_ALIASES.get(key) or next((c for c in CITY_COORDS if c.lower() == key), None)
+    return CITY_COORDS.get(name) if name else None
+
 
 def build_placement_map(df, show_heatmap=False):
     """Build a Folium map with company HQ markers and optional heatmap."""
     m = folium.Map(
         location=[20.5937, 78.9629],
         zoom_start=5,
-        tiles="CartoDB positron"
+        tiles="OpenStreetMap"      # was "CartoDB positron"
     )
 
     if df.empty:
@@ -34,9 +65,10 @@ def build_placement_map(df, show_heatmap=False):
 
     for _, row in city_stats.iterrows():
         city = row["City"]
-        if city not in CITY_COORDS:
+        coords = get_coords(city)
+        if coords is None:
             continue
-        lat, lon = CITY_COORDS[city]
+        lat, lon = coords
         offers = row["offer_count"]
         avg_pkg = round(row["avg_package"], 2)
         companies_str = row["companies"]
@@ -88,8 +120,9 @@ def build_placement_map(df, show_heatmap=False):
         heat_data = []
         for _, row in city_stats.iterrows():
             city = row["City"]
-            if city in CITY_COORDS:
-                lat, lon = CITY_COORDS[city]
+            coords = get_coords(city)
+            if coords is not None:
+                lat, lon = coords
                 heat_data.append([lat, lon, row["offer_count"]])
         if heat_data:
             HeatMap(heat_data, radius=40, blur=25, min_opacity=0.4).add_to(m)
@@ -101,7 +134,7 @@ def build_company_map(df):
     m = folium.Map(
         location=[20.5937, 78.9629],
         zoom_start=5,
-        tiles="CartoDB positron"
+        tiles="OpenStreetMap"      # was "CartoDB positron"
     )
     if df.empty:
         return m
@@ -115,9 +148,10 @@ def build_company_map(df):
 
     for _, row in top.iterrows():
         city = row["City"]
-        if city not in CITY_COORDS:
+        coords = get_coords(city)
+        if coords is None:
             continue
-        lat, lon = CITY_COORDS[city]
+        lat, lon = coords
         lat += (hash(row["Company"]) % 10 - 5) * 0.05
         lon += (hash(row["Company"]) % 7 - 3) * 0.05
 
